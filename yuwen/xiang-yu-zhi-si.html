@@ -1,0 +1,1990 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>项羽之死实词一词多义</title></head><body><article class="markdown-body"><h1 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>项羽之死实词一词多义</h1>
+<p>项王军壁垓下，兵少食尽，汉军及诸侯兵围之数重。夜闻汉军四面皆楚歌，项王乃大惊曰：“汉皆已得楚乎？是何楚人之多也！”项王则夜起，饮帐中。有美人名虞，常幸从；骏马名骓，常骑（qí）之。于是项王乃悲歌慷慨，自为诗曰：“力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可奈何，虞兮虞兮奈若何！”歌数阕，美人和之。项王泣数行下，左右皆泣，莫能仰视。<br />
+于是项王乃上马骑（jì），麾下壮士骑（qí）从者八百余人，直夜溃围南出，驰走。平明，汉军<br />
+项羽<br />
+项羽<br />
+乃觉之，令骑（qí）将灌婴以五千骑（jì）追之。项王渡淮（huái），骑（jì）能属（zhǔ）者百余人耳。项王至阴陵，迷失道，问一田父（fǔ），田父（fǔ）绐（dài）曰“左”。左，乃陷大泽中。以故汉追及之。项王乃复引兵而东，至东城，乃有二十八骑（jì）。汉骑（jì）追者数千人。项王自度不得脱。谓其骑（jì）曰：“吾起兵至今八岁矣，身七十余战，所当者破，所击者服，未尝败北，遂霸有天下。然今卒困于此，此天之亡我，非战之罪也。今日固决死，愿为诸君快战，必三胜之，为诸君溃围，斩将，刈（yì）旗，令诸君知天亡我，非战之罪也。”<br />
+乃分其骑（jì）以为四队，四向。汉军围之数重。项王谓其骑（jì）曰：“吾为公取彼一将。”令四面骑（jì）驰下，期山东为三处。于是项王大呼驰下，汉军皆披靡（mǐ），遂斩汉一将。是时，赤泉侯为骑（jì）将，追项王，项王瞋目而叱之，赤泉侯人马俱惊，辟易数里。与其骑（jì）会为三处。汉军不知项王所在，乃分军为三，复围之。项王乃驰，复斩汉一都尉，杀数十百人，复聚其骑（jì），亡其两骑（jì）耳。乃谓其骑（jì）曰：“何如？”骑（jì）皆伏曰：“如大王言。”<br />
+于是项王乃欲东渡乌江。乌江亭长檥船待，谓项王曰：“江东虽小，地方千里，众数十万人，亦足王也。愿大王急渡。今独臣有船，汉军至，无以渡。”项王笑曰：“天之亡我，我何渡为！且籍与江东子弟八千人渡江而西，今无一人还，纵江东父兄怜而王我，我何面目见之？纵彼不言，籍（jiè）独不愧于心乎？”乃谓亭长曰：“吾知公长者。吾骑（qí）此马五岁，所当无敌，尝一日行千里，不忍杀之，以赐公。”乃令骑（jì）皆下马步行，持短兵接战。独籍所杀汉军数百人。项王身亦被十余创。顾见汉骑（jì）司马吕马童，曰：“若非吾故人乎？”马童面之，指王翳（yì）曰：“此项王也。”项王乃曰：“吾闻汉购我头千金，邑（yì）万户，吾为若德。”乃自刎(wěn)而死.&rsquo;&lsquo;王翳取其头，馀骑相蹂践争项王，相杀者数十人。最其后，郎中骑杨喜，骑司马吕 马童，郎中吕胜、杨武各得其一体。五人共会其体，皆是。故分其地为五：封吕马童为中水侯，封王翳为杜衍侯，封杨喜为赤泉侯，封杨武为吴防侯，封吕胜为涅阳侯。</p>
+<table>
+<thead>
+<tr>
+<th>实词</th>
+<th>意思</th>
+<th>词组</th>
+<th>句子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>东</td>
+<td>东边的</td>
+<td>东城</td>
+<td>至东城</td>
+</tr>
+<tr>
+<td>东</td>
+<td>往东</td>
+<td>东</td>
+<td>项王乃复引兵而东</td>
+</tr>
+<tr>
+<td>东</td>
+<td>往东</td>
+<td>东渡</td>
+<td>于是项王乃欲东渡乌江</td>
+</tr>
+<tr>
+<td>东</td>
+<td>的东边</td>
+<td>山东</td>
+<td>期山东为三处</td>
+</tr>
+<tr>
+<td>东</td>
+<td>的东边</td>
+<td>江东</td>
+<td>纵江东父兄怜而王我</td>
+</tr>
+<tr>
+<td>东</td>
+<td>的东边</td>
+<td>江东</td>
+<td>我何渡为！且籍与江东子弟八千人渡江而西</td>
+</tr>
+<tr>
+<td>东</td>
+<td>的东边</td>
+<td>江东</td>
+<td>江东虽小</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>于是</td>
+<td>乃</td>
+<td>乃令骑皆下马步行</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>于是</td>
+<td>乃</td>
+<td>乃分其骑以为四队</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>于是</td>
+<td>乃</td>
+<td>乃分军为三</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>于是</td>
+<td>乃</td>
+<td>乃自刎而死.</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>于是</td>
+<td>乃谓</td>
+<td>乃谓亭长曰：</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>于是</td>
+<td>乃谓</td>
+<td>乃谓其骑曰：</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>于是</td>
+<td>乃陷</td>
+<td>乃陷大泽中</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>只</td>
+<td>乃</td>
+<td>乃有二十八骑</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>就</td>
+<td>乃</td>
+<td>项王乃大惊曰：</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>就</td>
+<td>乃上马</td>
+<td>于是项王乃上马骑</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>就</td>
+<td>乃复</td>
+<td>项王乃复引兵而东</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>就</td>
+<td>乃悲歌</td>
+<td>于是项王乃悲歌慷慨</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>就</td>
+<td>乃曰</td>
+<td>项王乃曰：</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>就</td>
+<td>乃欲</td>
+<td>于是项王乃欲东渡乌江</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>就</td>
+<td>乃驰</td>
+<td>项王乃驰</td>
+</tr>
+<tr>
+<td>乃</td>
+<td>才</td>
+<td>乃觉</td>
+<td>汉军乃觉之</td>
+</tr>
+<tr>
+<td>亡</td>
+<td>杀死</td>
+<td>亡</td>
+<td>亡其两骑耳</td>
+</tr>
+<tr>
+<td>亡</td>
+<td>要灭亡（政权）</td>
+<td>亡我</td>
+<td>令诸君知天亡我</td>
+</tr>
+<tr>
+<td>亡</td>
+<td>要灭亡（政权）</td>
+<td>亡我</td>
+<td>天之亡我</td>
+</tr>
+<tr>
+<td>亡</td>
+<td>要灭亡（政权）</td>
+<td>亡我</td>
+<td>此天之亡我</td>
+</tr>
+<tr>
+<td>从</td>
+<td>跟从</td>
+<td>骑从者</td>
+<td>麾下壮士骑从者八百余人</td>
+</tr>
+<tr>
+<td>从</td>
+<td>陪同</td>
+<td>从</td>
+<td>常幸从</td>
+</tr>
+<tr>
+<td>何</td>
+<td>为什么</td>
+<td>何楚人</td>
+<td>是何楚人之多也！</td>
+</tr>
+<tr>
+<td>何</td>
+<td>为什么</td>
+<td>何渡</td>
+<td>我何渡为！且籍与江东子弟八千人渡江而西</td>
+</tr>
+<tr>
+<td>何</td>
+<td>什么</td>
+<td>何如</td>
+<td>何如</td>
+</tr>
+<tr>
+<td>何</td>
+<td>以什么</td>
+<td>何面目</td>
+<td>我何面目见之</td>
+</tr>
+<tr>
+<td>何</td>
+<td>怎样</td>
+<td>何</td>
+<td>虞兮虞兮奈若何！</td>
+</tr>
+<tr>
+<td>何</td>
+<td>怎样</td>
+<td>可奈何</td>
+<td>骓不逝兮可奈何</td>
+</tr>
+<tr>
+<td>公</td>
+<td>你</td>
+<td>公长者</td>
+<td>吾知公长者</td>
+</tr>
+<tr>
+<td>公</td>
+<td>你</td>
+<td>赐公</td>
+<td>以赐公</td>
+</tr>
+<tr>
+<td>公</td>
+<td>你（们）</td>
+<td>为公</td>
+<td>吾为公取彼一将</td>
+</tr>
+<tr>
+<td>兵</td>
+<td>军队</td>
+<td>兵围</td>
+<td>汉军及诸侯兵围之数重</td>
+</tr>
+<tr>
+<td>兵</td>
+<td>军队</td>
+<td>引兵</td>
+<td>项王乃复引兵而东</td>
+</tr>
+<tr>
+<td>兵</td>
+<td>军队</td>
+<td>起兵</td>
+<td>吾起兵至今八岁矣</td>
+</tr>
+<tr>
+<td>兵</td>
+<td>士兵</td>
+<td>兵少</td>
+<td>兵少食尽</td>
+</tr>
+<tr>
+<td>兵</td>
+<td>武器</td>
+<td>兵接战</td>
+<td>持短兵接战</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>分军</td>
+<td>乃分军为三</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>汉军</td>
+<td>夜闻汉军四面皆楚歌</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>汉军</td>
+<td>汉军不知项王所在</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>汉军</td>
+<td>汉军乃觉之</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>汉军</td>
+<td>汉军及诸侯兵围之数重</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>汉军</td>
+<td>汉军围之数重</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>汉军</td>
+<td>汉军皆披靡</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>汉军</td>
+<td>独籍所杀汉军数百人</td>
+</tr>
+<tr>
+<td>军</td>
+<td>军队</td>
+<td>汉军至</td>
+<td>汉军至</td>
+</tr>
+<tr>
+<td>军</td>
+<td>驻扎</td>
+<td>军</td>
+<td>项王军壁垓下</td>
+</tr>
+<tr>
+<td>及</td>
+<td>和</td>
+<td>及</td>
+<td>汉军及诸侯兵围之数重</td>
+</tr>
+<tr>
+<td>及</td>
+<td>追上</td>
+<td>及</td>
+<td>以故汉追及之</td>
+</tr>
+<tr>
+<td>名</td>
+<td>名为</td>
+<td>名虞</td>
+<td>有美人名虞</td>
+</tr>
+<tr>
+<td>名</td>
+<td>著名的</td>
+<td>名骓</td>
+<td>骏马名骓</td>
+</tr>
+<tr>
+<td>复</td>
+<td>再</td>
+<td>复围</td>
+<td>复围之</td>
+</tr>
+<tr>
+<td>复</td>
+<td>再</td>
+<td>复聚</td>
+<td>复聚其骑</td>
+</tr>
+<tr>
+<td>复</td>
+<td>又</td>
+<td>复引</td>
+<td>项王乃复引兵而东</td>
+</tr>
+<tr>
+<td>复</td>
+<td>又</td>
+<td>复斩</td>
+<td>复斩汉一都尉</td>
+</tr>
+<tr>
+<td>如</td>
+<td>像</td>
+<td>何如</td>
+<td>何如</td>
+</tr>
+<tr>
+<td>如</td>
+<td>像</td>
+<td>如</td>
+<td>如大王言</td>
+</tr>
+<tr>
+<td>左</td>
+<td>向左走</td>
+<td>左</td>
+<td>左</td>
+</tr>
+<tr>
+<td>左</td>
+<td>向左走</td>
+<td>左</td>
+<td>田父绐曰“左”</td>
+</tr>
+<tr>
+<td>左</td>
+<td>附近的人</td>
+<td>左右皆泣</td>
+<td>左右皆泣</td>
+</tr>
+<tr>
+<td>当</td>
+<td>征战的</td>
+<td>当</td>
+<td>所当无敌</td>
+</tr>
+<tr>
+<td>当</td>
+<td>挡</td>
+<td>当</td>
+<td>所当者破</td>
+</tr>
+<tr>
+<td>得</td>
+<td>征服，得到</td>
+<td>得</td>
+<td>汉皆已得楚乎</td>
+</tr>
+<tr>
+<td>得</td>
+<td>能够</td>
+<td>不得</td>
+<td>项王自度不得脱</td>
+</tr>
+<tr>
+<td>故</td>
+<td>以前的</td>
+<td>故人</td>
+<td>若非吾故人乎</td>
+</tr>
+<tr>
+<td>故</td>
+<td>然后</td>
+<td>故汉</td>
+<td>以故汉追及之</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>数</td>
+<td>汉军及诸侯兵围之数重</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>数</td>
+<td>汉军围之数重</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>数</td>
+<td>辟易数里</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>数十</td>
+<td>杀数十百人</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>数十</td>
+<td>相杀者数十人</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>数十万</td>
+<td>众数十万人</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>数千</td>
+<td>汉骑追者数千人</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>数百</td>
+<td>独籍所杀汉军数百人</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>歌数阕</td>
+<td>歌数阕</td>
+</tr>
+<tr>
+<td>数</td>
+<td>几</td>
+<td>王泣数</td>
+<td>项王泣数行下</td>
+</tr>
+<tr>
+<td>是</td>
+<td>这</td>
+<td>是</td>
+<td>是何楚人之多也！</td>
+</tr>
+<tr>
+<td>是</td>
+<td>这个</td>
+<td>是</td>
+<td>是时</td>
+</tr>
+<tr>
+<td>是</td>
+<td>这样</td>
+<td>于是</td>
+<td>于是项王乃上马骑</td>
+</tr>
+<tr>
+<td>是</td>
+<td>这样</td>
+<td>于是</td>
+<td>于是项王乃悲歌慷慨</td>
+</tr>
+<tr>
+<td>是</td>
+<td>这样</td>
+<td>于是</td>
+<td>于是项王乃欲东渡乌江</td>
+</tr>
+<tr>
+<td>是</td>
+<td>这样</td>
+<td>于是</td>
+<td>于是项王大呼驰下</td>
+</tr>
+<tr>
+<td>歌</td>
+<td>吟唱</td>
+<td>悲歌</td>
+<td>于是项王乃悲歌慷慨</td>
+</tr>
+<tr>
+<td>歌</td>
+<td>吟唱</td>
+<td>歌数阕</td>
+<td>歌数阕</td>
+</tr>
+<tr>
+<td>歌</td>
+<td>歌声</td>
+<td>楚歌</td>
+<td>夜闻汉军四面皆楚歌</td>
+</tr>
+<tr>
+<td>独</td>
+<td>只凭</td>
+<td>独</td>
+<td>独籍所杀汉军数百人</td>
+</tr>
+<tr>
+<td>独</td>
+<td>只有</td>
+<td>独臣</td>
+<td>今独臣有船</td>
+</tr>
+<tr>
+<td>独</td>
+<td>难道</td>
+<td>籍独</td>
+<td>籍独不愧于心乎</td>
+</tr>
+<tr>
+<td>王</td>
+<td>姓</td>
+<td>王翳</td>
+<td>封王翳为杜衍侯</td>
+</tr>
+<tr>
+<td>王</td>
+<td>姓</td>
+<td>王翳</td>
+<td>指王翳曰：</td>
+</tr>
+<tr>
+<td>王</td>
+<td>称王、统治</td>
+<td>王</td>
+<td>亦足王也</td>
+</tr>
+<tr>
+<td>王</td>
+<td>让项羽称王</td>
+<td>王</td>
+<td>纵江东父兄怜而王我</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>大王</td>
+<td>如大王言</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>大王</td>
+<td>愿大王急渡</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>于是项王乃上马骑</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>于是项王乃悲歌慷慨</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>于是项王乃欲东渡乌江</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>于是项王大呼驰下</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>此项王也</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>汉军不知项王所在</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>谓项王曰：</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>追项王</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王乃复引兵而东</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王乃大惊曰：</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王乃曰：</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王乃驰</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王军壁垓下</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王则夜起</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王泣数行下</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王渡淮</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王瞋目而叱之</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王笑曰：</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王自度不得脱</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王至阴陵</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王谓其骑曰：</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>项王身亦被十余创</td>
+</tr>
+<tr>
+<td>王</td>
+<td>项王</td>
+<td>项王</td>
+<td>馀骑相蹂践争项王</td>
+</tr>
+<tr>
+<td>知</td>
+<td>知道</td>
+<td>不知</td>
+<td>汉军不知项王所在</td>
+</tr>
+<tr>
+<td>知</td>
+<td>知道</td>
+<td>知</td>
+<td>令诸君知天亡我</td>
+</tr>
+<tr>
+<td>知</td>
+<td>认为</td>
+<td>吾知</td>
+<td>吾知公长者</td>
+</tr>
+<tr>
+<td>胜</td>
+<td>名</td>
+<td>吕胜</td>
+<td>封吕胜为涅阳侯</td>
+</tr>
+<tr>
+<td>胜</td>
+<td>名</td>
+<td>吕胜</td>
+<td>郎中吕胜、杨武各得其一体</td>
+</tr>
+<tr>
+<td>胜</td>
+<td>打败</td>
+<td>胜</td>
+<td>必三胜之</td>
+</tr>
+<tr>
+<td>若</td>
+<td>你（虞姬）</td>
+<td>虞兮奈若</td>
+<td>虞兮虞兮奈若何！</td>
+</tr>
+<tr>
+<td>若</td>
+<td>你（马童）</td>
+<td>若德</td>
+<td>吾为若德</td>
+</tr>
+<tr>
+<td>若</td>
+<td>你（马童）</td>
+<td>若非</td>
+<td>若非吾故人乎</td>
+</tr>
+<tr>
+<td>行</td>
+<td>条</td>
+<td>行</td>
+<td>项王泣数行下</td>
+</tr>
+<tr>
+<td>行</td>
+<td>走</td>
+<td>步行</td>
+<td>乃令骑皆下马步行</td>
+</tr>
+<tr>
+<td>行</td>
+<td>走</td>
+<td>行</td>
+<td>尝一日行千里</td>
+</tr>
+<tr>
+<td>见</td>
+<td>看到</td>
+<td>顾见</td>
+<td>顾见汉骑司马吕马童</td>
+</tr>
+<tr>
+<td>见</td>
+<td>面对</td>
+<td>见之</td>
+<td>我何面目见之</td>
+</tr>
+<tr>
+<td>诸</td>
+<td>官名</td>
+<td>诸侯</td>
+<td>汉军及诸侯兵围之数重</td>
+</tr>
+<tr>
+<td>诸</td>
+<td>这些</td>
+<td>诸</td>
+<td>令诸君知天亡我</td>
+</tr>
+<tr>
+<td>诸</td>
+<td>这些</td>
+<td>诸君</td>
+<td>为诸君溃围</td>
+</tr>
+<tr>
+<td>诸</td>
+<td>这些</td>
+<td>诸君</td>
+<td>愿为诸君快战</td>
+</tr>
+<tr>
+<td>身</td>
+<td>亲身经历</td>
+<td>身</td>
+<td>身七十余战</td>
+</tr>
+<tr>
+<td>身</td>
+<td>的身体</td>
+<td>项王身</td>
+<td>项王身亦被十余创</td>
+</tr>
+<tr>
+<td>遂</td>
+<td>于是</td>
+<td>遂斩</td>
+<td>遂斩汉一将</td>
+</tr>
+<tr>
+<td>遂</td>
+<td>所以才</td>
+<td>遂霸</td>
+<td>遂霸有天下</td>
+</tr>
+<tr>
+<td>长</td>
+<td>职位</td>
+<td>亭长</td>
+<td>乃谓亭长曰：</td>
+</tr>
+<tr>
+<td>长</td>
+<td>职位</td>
+<td>亭长</td>
+<td>乌江亭长檥船待</td>
+</tr>
+<tr>
+<td>长</td>
+<td>辈分</td>
+<td>公长者</td>
+<td>吾知公长者</td>
+</tr>
+<tr>
+<td>闻</td>
+<td>听见</td>
+<td>夜闻汉军</td>
+<td>夜闻汉军四面皆楚歌</td>
+</tr>
+<tr>
+<td>闻</td>
+<td>知道</td>
+<td>闻</td>
+<td>吾闻汉购我头千金</td>
+</tr>
+<tr>
+<td>非</td>
+<td>不是</td>
+<td>非战之罪</td>
+<td>非战之罪也</td>
+</tr>
+<tr>
+<td>非</td>
+<td>（难道）不是</td>
+<td>若非</td>
+<td>若非吾故人乎</td>
+</tr>
+<tr>
+<td>面</td>
+<td>方向</td>
+<td>四面</td>
+<td>令四面骑驰下</td>
+</tr>
+<tr>
+<td>面</td>
+<td>方向</td>
+<td>四面</td>
+<td>夜闻汉军四面皆楚歌</td>
+</tr>
+<tr>
+<td>面</td>
+<td>脸面</td>
+<td>何面目</td>
+<td>我何面目见之</td>
+</tr>
+<tr>
+<td>面</td>
+<td>面对</td>
+<td>面之</td>
+<td>马童面之</td>
+</tr>
+</tbody>
+</table>
+<p>下面没有了<br />
+下面没有了<br />
+下面没有了<br />
+下面没有了<br />
+下面没有了<br />
+下面没有了<br />
+下面没有了<br />
+下面没有了<br />
+下面没有了<br />
+下面没有了<br />
+下面没有了</p>
+<p>项/nh  王军/nh  壁垓/n  下/nd  ，/wp  兵少食/n  尽/v  ，/wp  汉军/n  及/c  诸侯/n  兵围/n  之/u  数/n  重/a  。/wp  夜闻汉军/n  四面/nd  皆/d  楚歌/v  ，/wp  项王/n  乃/c  大/a  惊/v  曰/v  ：/wp  “/wp  汉/nt  皆/d  已/d  得/u  楚乎/z  ？/wp  是/v  何楚人/r  之/u  多/n  也/u  ！/wp  ”/wp  项王/n  则/c  夜/nt  起/nd  ，/wp  饮帐/n  中/nd  。/wp  有/v  美人/n  名虞/n  ，/wp  常幸/v  从/v  ；/wp  骏马/n  名骓/n  ，/wp  常/d  骑/v  之/r  。/wp  于是/c  项/nh  王乃/nh  悲歌/n  慷慨/a  ，/wp  自/r  为/v  诗/n  曰/v  ：/wp  “/wp  力拔山/ns  兮气盖世/n  ，/wp  时/n  不/d  利兮骓/v  不/d  逝/v  。/wp  骓/v  不/d  逝兮可奈何/v  ，/wp  虞兮/nh  虞兮奈若/nh  何/r  ！/wp  ”/wp  歌数阕/n  ，/wp  美人/n  和/c  之/r  。/wp  项/nh  王泣数/nh  行/v  下/nd  ，/wp  左右皆泣/i  ，/wp  莫能/v  仰视/v  。/wp<br />
+于是/c  项/nh  王乃/nh  上马/v  骑/v  ，/wp  麾下/n  壮士/n  骑从者/n  八百/m  余/m  人/n  ，/wp  直夜/nt  溃围/nd  南/nd  出/v  ，/wp  驰走/v  。/wp  平明/i  ，/wp  汉军/n  乃觉/n  之/r  ，/wp  令/v  骑/v  将/d  灌婴/v  以/p  五千/m  骑/v  追/v  之/r  。/wp  项王/n  渡淮/v  ，/wp  骑/v  能/v  属者/n  百/m  余/m  人/n  耳/u  。/wp  项王/n  至/p  阴陵/n  ，/wp  迷失道/n  ，/wp  问/v  一/m  田/n  父/n  ，/wp  田父/n  绐/v  曰/v  “/wp  左/a  ”/wp  。/wp  左/nd  ，/wp  乃陷/v  大泽/n  中/nd  。/wp  以/p  故汉/n  追/v  及/c  之/r  。/wp  项/nh  王乃复/nh  引兵/v  而/c  东/nd  ，/wp  至/p  东城/ns  ，/wp  乃/v  有/v  二十八/m  骑/v  。/wp  汉骑追者/n  数千/m  人/n  。/wp  项王/n  自度/n  不得/v  脱/v  。/wp  谓/v  其/r  骑/v  曰/v  ：/wp  “/wp  吾/r  起兵/v  至今/d  八/m  岁/q  矣/u  ，/wp  身/n  七十/m  余/m  战/n  ，/wp  所/u  当/v  者/k  破/a  ，/wp  所击者服/n  ，/wp  未尝/d  败北/v  ，/wp  遂/d  霸/v  有/v  天下/n  。/wp  然今/c  卒困/v  于/p  此/r  ，/wp  此/r  天/n  之/u  亡/v  我/r  ，/wp  非战之罪/b  也/u  。/wp  今日/nt  固决死/v  ，/wp  愿/v  为/p  诸君/r  快战/v  ，/wp  必/d  三/m  胜/v  之/r  ，/wp  为/p  诸君/n  溃围/v  ，/wp  斩将/i  ，/wp  刈旗/n  ，/wp  令/v  诸/r  君/n  知/v  天亡/v  我/r  ，/wp  非战之罪/b  也/u  。/wp  ”/wp<br />
+乃/v  分/v  其/r  骑/v  以为/v  四/m  队/n  ，/wp  四/m  向/n  。/wp  汉/nt  军围/n  之/u  数/n  重/a  。/wp  项/nh  王谓/nh  其/r  骑/v  曰/v  ：/wp  “/wp  吾/r  为/p  公取彼/r  一/m  将/n  。/wp  ”/wp  令/n  四面/nd  骑驰/v  下/nd  ，/wp  期/v  山东/ns  为/v  三/m  处/q  。/wp  于是/c  项/q  王/n  大/d  呼驰/v  下/nd  ，/wp  汉军/n  皆/d  披靡/v  ，/wp  遂/d  斩/v  汉/nt  一/m  将/q  。/wp  是/r  时/n  ，/wp  赤泉/nh  侯/nh  为/v  骑将/n  ，/wp  追/v  项/q  王/n  ，/wp  项王/n  瞋目/n  而/c  叱/v  之/r  ，/wp  赤泉/nh  侯/nh  人马/n  俱/d  惊/v  ，/wp  辟/v  易/a  数/m  里/q  。/wp  与/p  其/r  骑会/n  为/v  三/m  处/q  。/wp  汉军/n  不知/v  项王/n  所在/n  ，/wp  乃/v  分军/n  为/v  三/m  ，/wp  复围/v  之/r  。/wp  项王/n  乃驰/v  ，/wp  复斩汉/v  一/m  都/q  尉/n  ，/wp  杀/v  数十/m  百/m  人/n  ，/wp  复聚/v  其/r  骑/n  ，/wp  亡/v  其/r  两/m  骑/v  耳/n  。/wp  乃谓/v  其/r  骑/v  曰/v  ：/wp  “/wp  何如/r  ？/wp  ”/wp  骑/v  皆/d  伏/v  曰/v  ：/wp  “/wp  如/c  大王/n  言/n  。/wp  ”/wp<br />
+于是/c  项/nh  王乃欲/nh  东渡/v  乌江/ns  。/wp  乌江亭/ns  长檥船待/v  ，/wp  谓/v  项/nh  王/nh  曰/v  ：/wp  “/wp  江东/ns  虽/c  小/a  ，/wp  地方/n  千/m  里/q  ，/wp  众/a  数十万/m  人/n  ，/wp  亦/d  足/a  王/n  也/u  。/wp  愿/v  大王/n  急渡/v  。/wp  今/nt  独臣/d  有/v  船/n  ，/wp  汉军至/nt  ，/wp  无以渡/i  。/wp  ”/wp  项/nh  王笑/nh  曰/v  ：/wp  “/wp  天/n  之/u  亡/v  我/r  ，/wp  我/r  何渡/d  为/v  ！/wp  且籍/c  与/p  江东/ns  子弟/n  八千/m  人/n  渡/v  江/n  而/c  西/nd  ，/wp  今/nt  无/v  一/m  人/n  还/v  ，/wp  纵江/ns  东父/n  兄怜/n  而/c  王/nh  我/r  ，/wp  我/r  何面/d  目见之/i  ？/wp  纵彼/v  不/d  言/v  ，/wp  籍独/d  不愧于/v  心乎/u  ？/wp  ”/wp  乃谓/v  亭长/n  曰/v  ：/wp  “/wp  吾/r  知/v  公长者/n  。/wp  吾/r  骑/v  此/r  马/n  五/m  岁/q  ，/wp  所/u  当/v  无敌/v  ，/wp  尝/v  一/m  日/q  行/v  千/m  里/q  ，/wp  不忍/v  杀/v  之/r  ，/wp  以/c  赐公/v  。/wp  ”/wp  乃/c  令/v  骑/v  皆/d  下马/v  步行/v  ，/wp  持/v  短/a  兵接战/n  。/wp  独籍/n  所/u  杀/v  汉军/n  数百/m  人/n  。/wp  项/nh  王身/nh  亦/d  被/p  十/m  余/m  创/v  。/wp  顾见汉/nh  骑/v  司马吕/nh  马童/nh  ，/wp  曰/v  ：/wp  “/wp  若非/c  吾/r  故人/n  乎/u  ？/wp  ”/wp  马童面/n  之/r  ，/wp  指/v  王翳曰/nh  ：/wp  “/wp  此/r  项/q  王/nh  也/u  。/wp  ”/wp  项/nh  王乃曰/nh  ：/wp  “/wp  吾/r  闻/v  汉购/v  我/r  头千金/n  ，/wp  邑万/m  户/q  ，/wp  吾/r  为/v  若德/nh  。/wp  ”/wp  乃/c  自刎/i  而/c  死./nh  &lsquo;/nh  &lsquo;/nh  王翳取/nh  其头/r  ，/wp  馀骑/n  相/d  蹂践/v  争/v  项王/n  ，/wp  相杀者/n  数十/m  人/n  。/wp  最/d  其/r  后/nd  ，/wp  郎中/ns  骑/v  杨喜/nh  ，/wp  骑/v  司马吕/nh  马童/nh  ，/wp  郎中/nh  吕胜/nh  、/wp  杨武/nh  各得其一体/r  。/wp  五/m  人/n  共/d  会/v  其/r  体/n  ，/wp  皆/d  是/v  。/wp  故分/v  其/r  地/u  为/p  五/m  ：/wp  封/v  吕马童/nh  为/p  中/nd  水侯/n  ，/wp  封/v  王翳/nh  为/p  杜衍侯/n  ，/wp  封/v  杨喜/nh  为/p  赤泉侯/n  ，/wp  封/v  杨武/nh  为/p  吴防侯/n  ，/wp  封/v  吕胜/nh  为/v  涅阳侯/n  。/wp</p>
+<style type="text/css">
+    *{font-family: "微软雅黑"}
+</style></article></body></html>

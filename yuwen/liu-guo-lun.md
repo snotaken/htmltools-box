@@ -1,26 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>文言知识简拆</title>
+# 六国论
+-
+　　六国破灭，非兵不利 ，战不善，弊在赂秦。赂秦而力亏，破灭之道也。或曰：六国互丧，率赂秦耶？曰：不赂者以赂者丧，盖失强援，不能独完。故曰：弊在赂秦也。
+　　秦以攻取之外，小则获邑，大则得城。较秦之所得，与战胜而得者，其实百倍；诸侯之所亡，与战败而亡者，其实亦百倍。则秦之所大欲，诸侯之所大患，固不在战矣。思厥先祖父，暴霜露，斩荆棘，以有尺寸之地。子孙视之不甚惜，举以予人，如弃草芥。今日割五城，明日割十城，然后得一夕安寝。起视四境，而秦兵又至矣。然则诸侯之地有限，暴秦之欲无厌，奉之弥繁，侵之愈急。故不战而强弱胜负已判矣。至于颠覆，理固宜然。古人云：“以地事秦，犹抱薪救火，薪不尽，火不灭。”此言得之。
+　　齐人未尝赂秦，终继五国迁灭，何哉？与嬴而不助五国也。五国既丧，齐亦不免矣。燕赵之君，始有远略，能守其土，义不赂秦。是故燕虽小国而后亡，斯用兵之效也。至丹以荆卿为计，始速祸焉。赵尝五战于秦，二败而三胜。后秦击赵者再，李牧连却之。洎牧以谗诛，邯郸为郡，惜其用武而不终也。且燕赵处秦革灭殆尽之际，可谓智力孤危，战败而亡，诚不得已。向使三国各爱其地，齐人勿附于秦，刺客不行，良将犹在，则胜负之数，存亡之理，当与秦相较，或未易量。
+　　呜呼！以赂秦之地，封天下之谋臣，以事秦之心，礼天下之奇才，并力西向，则吾恐秦人食之不得下咽也。悲夫！有如此之势，而为秦人积威之所劫，日削月割，以趋于亡。为国者无使为积威之所劫哉！
+　　夫六国与秦皆诸侯，其势弱于秦，而犹有可以不赂而胜之之势。苟以天下之大，而从六国破亡之故事，是又在六国下矣。
 
-<style type="text/css">
-table, td{
-    border: solid 1px lightgray;
-    border-collapse: collapse;
-}
-</style>
-<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+## 古今异义列表
+词|神奇的古义|今义|句
+-|-|-|-
+不行|古义：不去做某事|今义：能力、本事欠缺；水平不高|刺客不行
+与|古义：结交|今义：和|与嬴而不助五国也
+丧|古义：损失|今义：死亡|或曰：六国互丧
+为|古义：治理|今义：一般表示做（作为）|为国者无使为积威之所劫哉
+事|古义：侍奉|今义：自然界和社会中的现象和活动|以地事秦；<br />以事秦之心
+亡|古义：丧失,丢失.|今义：死亡|诸侯之所亡
+兵|古义：兵器|今义：士兵|非兵不利
+其实|古义：它实际的情况|今义：实际上（副词）|其实百倍；<br />其实亦百倍
+再|古义：第二次，两次|今义：又一次|后秦击赵者再
+则|古义：这样|今义：表示转折，就|然则诸侯之地有限
+劫|古义：胁迫|今义：以强力使对方欲去而不得|而为秦人积威之所劫；<br />为国者无使为积威之所劫哉
+却|古义：退却，这里是使动用法|今义：表转折|李牧连却之
+厌|古义：满足|今义：表示嫌恶，憎恶|暴秦之欲无厌
+可以|古义：可以凭借|今义：表示可能或能够（表示许可，赞同）|而犹有可以不赂而胜之之势
+向|古义：以前|今义：方向，朝向|向使三国各爱其地；<br />并力西向
+咽|古义：咽下咽喉|今义：吞咽|则吾恐秦人食之不得下咽也
+固|古义：本来|今义：结实、牢固|固不在战矣；<br />理固宜然
+如此|古义：像这样|今义：这样|有如此之势
+完|古义：保全|今义：尽，无|不能独完
+故事|古义：先例、旧事|今义：真实的或虚构的有人物有情节的事情|而从六国破亡之故事
+智力|古义：智谋和力量|今义：理解事物的能力|可谓智力孤危
+然后|古义：这样以后|今义：表示一件事情之后接着又发生另一件事情|然后得一夕安寝
+率|古义：都，皆|今义：带领|率赂秦耶
+盖|古义：原因|今义：遮掩，压倒，超过|盖失强援
+祖父|古义：祖辈和父辈|今义：父亲的父亲|思厥先祖父
+至于|古义：至：到；于：引出结果。以至于|今义：连词，表示到达某种程度|至于颠覆
+苟|古义：如果|今义：姑且，暂且|苟以天下之大
+视|古义：对待|今义：看，视觉|子孙视之不甚惜
+速|古义：招致|今义：速度|始速祸焉
+道|古义：途径，原因|今义：道理，事理|破灭之道也
+
+.
+.
+.
+.
+.
+.
+.
+下面。。。全是看不懂的什么东西……
+下面。。。全是看不懂的什么东西……
+下面。。。全是看不懂的什么东西……
+下面。。。全是看不懂的什么东西……
+下面。。。全是看不懂的什么东西……Duang!
+下面。。。全是看不懂的什么东西……Duang!
+下面。。。全是看不懂的什么东西……Duang!
+下面。。。全是看不懂的什么东西……Duang!
 
 
-<style type="text/css">
-</style>
-</head>
-<body>
 
 
-返回：<a href="http://snowstarcyan.com/htmltools/">snowstarcyan.com/htmltools</a>
 
+
+
+## 文言现象筛选器（[在线](http://snowstarcyan.com/guwenfenxi.html)）
 
 <div>
 <script>
@@ -60,9 +102,6 @@ getWord = function(txt, pos){
     console.log(posL, posR)
     return txt.substr(posL+1, posR - posL-1)
 }
-getHighlight = function(highlightText, text){
-    return text.replace(highlightText, '<span class="highlight">'+highlightText+'</span>');
-}
 tbodyMatches = function(text, ls){
     var lsHtml = []
     ls.forEach(function(v){
@@ -94,7 +133,7 @@ tbodyMatches = function(text, ls){
                     +'<td>'+v[0]+"</td>"
                     +'<td>'+v[1]+"</td>"
                     +"<td>"+getWord(text, pos)+"</td>"
-                    +"<td>"+getHighlight(v[0], getSentence(text, pos))+"</td>"
+                    +"<td>"+getSentence(text, pos)+"</td>"
                 +"</tr>"
         })
     })
@@ -108,39 +147,34 @@ analyze = function(obj){
 }
 </script>
 <style type="text/css">
-    #guwenfenxi .highlight{
-        color: red;
-        zoom: 1.2;
-    }
-    #guwenfenxi *{
-        font-family: "微软雅黑";
-    }
-    #guwenfenxi #guwenfenxi_text{
-        width:100%;
-        height: 12em;
-        font-size: 10;
-    }
-    #guwenfenxi td:hover{
-        transform: rotate(-5deg);
-        opacity: 1;
-        font-weight: 800;
-        background: #FFFFFF;
-    }
-    #guwenfenxi td{
-        transition: font-weight 1s, opacity 0.5s, transform 0.2s, width 2s;
-    }
+	#text{
+		width:100%;
+		height: 12em;
+		font-size: 10;
+	}
+	*{
+		font-family: "微软雅黑";
+	}
+	td:hover
+	{
+		transform: rotate(-5deg);
+	    opacity: 1;
+	    font-weight: 800;
+	    color: blue;
+	    background: #FFFFFF;
+	    box-shadow: 0 0 1em #000;
+	}
+	td{
+		transition: color 1s, background 1s, box-shadow 1s, font-weight 1s, opacity 0.5s, transform 0.2s, width 2s;
+	}
 </style>
-</div>
 
-<div id='guwenfenxi'>
-    // <a href="http://www.ltp-cloud.com/demo/" target="_BLANK">语言云分词器</a>
-    <br />
-    // 通假字筛选
-    // 虚词筛选
-    // 实词筛选
-    // 古今异义筛选
-    <br />
-    <textarea id='guwenfenxi_text' onchange='analyze(this)'>
+<div id='waiDiv'>
+	// 通假字筛选器
+	// 虚词筛选器
+	// 实词筛选器
+	// 古今异义筛选器
+    <textarea id='text' onchange='analyze(this)'>
 六/m  国/n  破灭/v  ，/wp  非兵/b  不利/a  ，/wp  战不善/i  ，/wp  弊/n  在/p  赂秦/n  。/wp  赂/nh  秦而力亏/nh  ，/wp  破灭/v  之/u  道/n  也/u  。/wp  或/c  曰/v  ：/wp  六/m  国/n  互丧/v  ，/wp  率/v  赂/n  秦/nh  耶/u  ？/wp  曰/v  ：/wp  不赂者/n  以/p  赂者/n  丧/v  ，/wp  盖失/v  强援/v  ，/wp  不/d  能/v  独/d  完/v  。/wp  故/c  曰/v  ：/wp  弊/n  在/p  赂秦/n  也/u  。/wp
 
 秦以/nh  攻取/v  之外/nd  ，/wp  小/a  则/c  获邑/v  ，/wp  大/a  则/c  得/v  城/n  。/wp  较/d  秦/a  之/u  所得/n  ，/wp  与/p  战胜/v  而/c  得/v  者/r  ，/wp  其实/d  百倍/m  ；/wp  诸侯/n  之/u  所/u  亡/v  ，/wp  与/p  战败/n  而/c  亡者/n  ，/wp  其实/d  亦/d  百/m  倍/q  。/wp  则/c  秦/nt  之/r  所/u  大欲/n  ，/wp  诸侯/n  之/u  所/n  大/d  患/v  ，/wp  固/d  不/d  在/v  战/v  矣/u  。/wp  思厥/n  先祖父/n  ，/wp  暴霜露/n  ，/wp  斩/v  荆棘/n  ，/wp  以/c  有/v  尺寸/n  之/u  地/n  。/wp  子孙视之不甚惜/n  ，/wp  举/v  以/p  予/v  人/n  ，/wp  如/v  弃/v  草芥/n  。/wp  今日/nt  割/v  五/m  城/n  ，/wp  明日/nt  割/v  十/m  城/n  ，/wp  然后/c  得/v  一/m  夕/q  安寝/n  。/wp  起视/v  四境/n  ，/wp  而/c  秦兵/nh  又/d  至/v  矣/u  。/wp  然/c  则/c  诸侯之地/i  有限/a  ，/wp  暴秦之欲无厌/i  ，/wp  奉/v  之/r  弥/a  繁/a  ，/wp  侵/v  之/r  愈/d  急/a  。/wp  故/c  不/d  战/v  而/c  强弱/n  胜负/n  已/d  判/v  矣/u  。/wp  至于/p  颠覆/v  ，/wp  理固宜然/i  。/wp  古人/n  云/v  ：/wp  “/wp  以/p  地/u  事秦/i  ，/wp  犹/d  抱/v  薪/n  救火/v  ，/wp  薪/n  不尽/d  ，/wp  火/n  不/d  灭/v  。/wp  ”/wp  此言/r  得/v  之/r  。/wp
@@ -179,8 +213,6 @@ analyze = function(obj){
     </span>
 </div>
 
-<br />
-SnowstarCyan@gmail.com
-
-</body>
-</html>
+### 雪星表示对此工具保留最终解释权
+#### SnowstarCyan@gmail.com 
+</div>

@@ -1,0 +1,1384 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>六国论</title></head><body><article class="markdown-body"><h1 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>六国论</h1>
+<p>-<br />
+　　六国破灭，非兵不利 ，战不善，弊在赂秦。赂秦而力亏，破灭之道也。或曰：六国互丧，率赂秦耶？曰：不赂者以赂者丧，盖失强援，不能独完。故曰：弊在赂秦也。<br />
+　　秦以攻取之外，小则获邑，大则得城。较秦之所得，与战胜而得者，其实百倍；诸侯之所亡，与战败而亡者，其实亦百倍。则秦之所大欲，诸侯之所大患，固不在战矣。思厥先祖父，暴霜露，斩荆棘，以有尺寸之地。子孙视之不甚惜，举以予人，如弃草芥。今日割五城，明日割十城，然后得一夕安寝。起视四境，而秦兵又至矣。然则诸侯之地有限，暴秦之欲无厌，奉之弥繁，侵之愈急。故不战而强弱胜负已判矣。至于颠覆，理固宜然。古人云：“以地事秦，犹抱薪救火，薪不尽，火不灭。”此言得之。<br />
+　　齐人未尝赂秦，终继五国迁灭，何哉？与嬴而不助五国也。五国既丧，齐亦不免矣。燕赵之君，始有远略，能守其土，义不赂秦。是故燕虽小国而后亡，斯用兵之效也。至丹以荆卿为计，始速祸焉。赵尝五战于秦，二败而三胜。后秦击赵者再，李牧连却之。洎牧以谗诛，邯郸为郡，惜其用武而不终也。且燕赵处秦革灭殆尽之际，可谓智力孤危，战败而亡，诚不得已。向使三国各爱其地，齐人勿附于秦，刺客不行，良将犹在，则胜负之数，存亡之理，当与秦相较，或未易量。<br />
+　　呜呼！以赂秦之地，封天下之谋臣，以事秦之心，礼天下之奇才，并力西向，则吾恐秦人食之不得下咽也。悲夫！有如此之势，而为秦人积威之所劫，日削月割，以趋于亡。为国者无使为积威之所劫哉！<br />
+　　夫六国与秦皆诸侯，其势弱于秦，而犹有可以不赂而胜之之势。苟以天下之大，而从六国破亡之故事，是又在六国下矣。</p>
+<h2 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>古今异义列表</h2>
+<table>
+<thead>
+<tr>
+<th>词</th>
+<th>神奇的古义</th>
+<th>今义</th>
+<th>句</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不行</td>
+<td>古义：不去做某事</td>
+<td>今义：能力、本事欠缺；水平不高</td>
+<td>刺客不行</td>
+</tr>
+<tr>
+<td>与</td>
+<td>古义：结交</td>
+<td>今义：和</td>
+<td>与嬴而不助五国也</td>
+</tr>
+<tr>
+<td>丧</td>
+<td>古义：损失</td>
+<td>今义：死亡</td>
+<td>或曰：六国互丧</td>
+</tr>
+<tr>
+<td>为</td>
+<td>古义：治理</td>
+<td>今义：一般表示做（作为）</td>
+<td>为国者无使为积威之所劫哉</td>
+</tr>
+<tr>
+<td>事</td>
+<td>古义：侍奉</td>
+<td>今义：自然界和社会中的现象和活动</td>
+<td>以地事秦；<br />以事秦之心</td>
+</tr>
+<tr>
+<td>亡</td>
+<td>古义：丧失,丢失.</td>
+<td>今义：死亡</td>
+<td>诸侯之所亡</td>
+</tr>
+<tr>
+<td>兵</td>
+<td>古义：兵器</td>
+<td>今义：士兵</td>
+<td>非兵不利</td>
+</tr>
+<tr>
+<td>其实</td>
+<td>古义：它实际的情况</td>
+<td>今义：实际上（副词）</td>
+<td>其实百倍；<br />其实亦百倍</td>
+</tr>
+<tr>
+<td>再</td>
+<td>古义：第二次，两次</td>
+<td>今义：又一次</td>
+<td>后秦击赵者再</td>
+</tr>
+<tr>
+<td>则</td>
+<td>古义：这样</td>
+<td>今义：表示转折，就</td>
+<td>然则诸侯之地有限</td>
+</tr>
+<tr>
+<td>劫</td>
+<td>古义：胁迫</td>
+<td>今义：以强力使对方欲去而不得</td>
+<td>而为秦人积威之所劫；<br />为国者无使为积威之所劫哉</td>
+</tr>
+<tr>
+<td>却</td>
+<td>古义：退却，这里是使动用法</td>
+<td>今义：表转折</td>
+<td>李牧连却之</td>
+</tr>
+<tr>
+<td>厌</td>
+<td>古义：满足</td>
+<td>今义：表示嫌恶，憎恶</td>
+<td>暴秦之欲无厌</td>
+</tr>
+<tr>
+<td>可以</td>
+<td>古义：可以凭借</td>
+<td>今义：表示可能或能够（表示许可，赞同）</td>
+<td>而犹有可以不赂而胜之之势</td>
+</tr>
+<tr>
+<td>向</td>
+<td>古义：以前</td>
+<td>今义：方向，朝向</td>
+<td>向使三国各爱其地；<br />并力西向</td>
+</tr>
+<tr>
+<td>咽</td>
+<td>古义：咽下咽喉</td>
+<td>今义：吞咽</td>
+<td>则吾恐秦人食之不得下咽也</td>
+</tr>
+<tr>
+<td>固</td>
+<td>古义：本来</td>
+<td>今义：结实、牢固</td>
+<td>固不在战矣；<br />理固宜然</td>
+</tr>
+<tr>
+<td>如此</td>
+<td>古义：像这样</td>
+<td>今义：这样</td>
+<td>有如此之势</td>
+</tr>
+<tr>
+<td>完</td>
+<td>古义：保全</td>
+<td>今义：尽，无</td>
+<td>不能独完</td>
+</tr>
+<tr>
+<td>故事</td>
+<td>古义：先例、旧事</td>
+<td>今义：真实的或虚构的有人物有情节的事情</td>
+<td>而从六国破亡之故事</td>
+</tr>
+<tr>
+<td>智力</td>
+<td>古义：智谋和力量</td>
+<td>今义：理解事物的能力</td>
+<td>可谓智力孤危</td>
+</tr>
+<tr>
+<td>然后</td>
+<td>古义：这样以后</td>
+<td>今义：表示一件事情之后接着又发生另一件事情</td>
+<td>然后得一夕安寝</td>
+</tr>
+<tr>
+<td>率</td>
+<td>古义：都，皆</td>
+<td>今义：带领</td>
+<td>率赂秦耶</td>
+</tr>
+<tr>
+<td>盖</td>
+<td>古义：原因</td>
+<td>今义：遮掩，压倒，超过</td>
+<td>盖失强援</td>
+</tr>
+<tr>
+<td>祖父</td>
+<td>古义：祖辈和父辈</td>
+<td>今义：父亲的父亲</td>
+<td>思厥先祖父</td>
+</tr>
+<tr>
+<td>至于</td>
+<td>古义：至：到；于：引出结果。以至于</td>
+<td>今义：连词，表示到达某种程度</td>
+<td>至于颠覆</td>
+</tr>
+<tr>
+<td>苟</td>
+<td>古义：如果</td>
+<td>今义：姑且，暂且</td>
+<td>苟以天下之大</td>
+</tr>
+<tr>
+<td>视</td>
+<td>古义：对待</td>
+<td>今义：看，视觉</td>
+<td>子孙视之不甚惜</td>
+</tr>
+<tr>
+<td>速</td>
+<td>古义：招致</td>
+<td>今义：速度</td>
+<td>始速祸焉</td>
+</tr>
+<tr>
+<td>道</td>
+<td>古义：途径，原因</td>
+<td>今义：道理，事理</td>
+<td>破灭之道也</td>
+</tr>
+</tbody>
+</table>
+<p>.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+下面。。。全是看不懂的什么东西……<br />
+下面。。。全是看不懂的什么东西……<br />
+下面。。。全是看不懂的什么东西……<br />
+下面。。。全是看不懂的什么东西……<br />
+下面。。。全是看不懂的什么东西……Duang!<br />
+下面。。。全是看不懂的什么东西……Duang!<br />
+下面。。。全是看不懂的什么东西……Duang!<br />
+下面。。。全是看不懂的什么东西……Duang!</p>
+<h2 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>文言现象筛选器（<a href="http://snowstarcyan.com/guwenfenxi.html">在线</a>）</h2>
+<div>
+<script>
+// 通假字快查
+var lsTongJia = "不->否|世->逝|中->衷|为->谓|乡->向|于->吁|于->於|亡->无|从->纵|以->已|伏->服|信->伸|俨->严|倍->背|僇->戮|儋石->擔石|光->廣|免->娩|共->供|具->俱|内->纳|冥->溟|冯->凭|决->块|凶->兇|函胡->含糊|刑->型|剔->剃|匪->非|却->恰|厌->餍|厭->饜|厲->勵|县->悬|反->返|反->返|取->娶|受->授|句->勾|咨->諮|唱->倡|善->拭|嚮->向|嚮->響|圜->圆|坐->座|垂->陲|塗->途|失->佚|夷->怡|奉->捧|女->汝|媿->愧|孫->遜|孰->熟|孰->熟|尊->樽|尔->耳|屈->缺|属->嘱|已->以|已->矣|帅->率|希->稀|帖->贴|帘->奁|干->岸|底->抵|庭->廷|强->僵|彊->強|归->馈|当->倘|录->碌|得->德|忖->揣|志->誌|惠->慧|懽->歡|指->旨|指撝->指揮|振->震|摩->磨|摩厉->磨砺|攀->扳|支->肢|政->征|敛->殓|施->迤|族->眾|无->毋|景->影|暴->曝|曷->何|曾->层|有->又|机->几|板->版|枪->抢|案->按|止->只|每->们|没->冒|沽->酤|泮->畔|洼->窪|涂->途|濯->浊|灌->盥|火->伙|炎->焰|熙->嬉|父->甫|狡->娇|生->性|田->畋|由->犹|畔->叛|盖->盍|盤桓->徘徊|直->值|知->智|祗->只|离->罹|突->涂|简->拣|簡->揀|纫->韧|纽->扭|绰->戳|缪->穆|缾->瓶|罔->网|羞->馐|翼->翌|耆->嗜|而->尔|而->耐|耶->爷|耶孃->爺娘|肴->餚|與->歟|舍->捨|莫->暮|華->花|蓋->盍|蓐->褥|蚤->早|衡->横|被->披|裁->才|要->邀|见->现|詰詘->佶屈|詳->佯|說->悅|誼->義|譆->嘻|讎->仇|识->志|诎->屈|说->悦|说->脱|賓->儐|質->鑕|负->伏|责->债|质->贽|赀->资|趣->趋|趣->趨|距->拒|转->啭|辟->避|辩->辨|辩->变|辩->辨|还->旋|还->环|逝->誓|道->导|遙->搖|遯->遁|那->哪|邪->耶|邱->丘|郤->隙|采->彩|销->消|错->措|閒->間|闕->缺|闵->悯|阁->搁|阖->合|阙->缺|阳->佯|陇->垄|陵->凌|零丁->伶仃|顥->浩|颁->斑|颺->揚|食->饲|飨->享|驩->歡|齐->剂"
+
+var lsXuCi = "与->|且->|为->|乃->|之->|乎->|也->|于->|以->|何->|其->|则->|即->|因->|所->|既->|焉->|然->|盖->|矣->|者->|而->|若->|莫->|虽->"
+var lsShiCi = "爱->|安->|伯->|被->|倍->|本->|鄙->|兵->|病->|察->|长->|朝->|池->|曾->|乘->|城->|诚->|除->|传->|辞->|从->|达->|殆->|迨->|当->|道->|得->|度->|短->|多->|发->|方->|非->|复->|负->|盖->|鼓->|故->|顾->|固->|归->|国->|过->|何->|恨->|后->|胡->|患->|或->|疾->|及->|即->|既->|假->|间->|见->|解->|进->|尽->|就->|举->|绝->|堪->|克->|类->|怜->|临->|弥->|名->|末->|莫->|乃->|内->|判->|期->|奇->|迁->|请->|穷->|求->|去->|劝->|却->|如->|若->|善->|稍->|少->|涉->|胜->|识->|使->|是->|适->|书->|孰->|属->|数->|遂->|率->|说->|私->|素->|汤->|涕->|通->|徒->|图->|退->|亡->|王->|望->|恶->|微->|闻->|相->|谢->|悉->|信->|兴->|行->|幸->|修->|徐->|许->|阳->|要->|宜->|遗->|贻->|易->|阴->|引->|右->|逾->|狱->|再->|造->|知->|置->|致->|质->|治->|诸->|贼->|族->|卒->|走->|左->|坐->"
+lsShiCi += "|东->|云->|何->|公->|军->|左->|当->|是->|歌->|独->|王->|行->|身->|身->|面->"
+
+var lsGuJinYiYi = "一切->古义：一律、一概、任何<br />今义：所有的|不用->古义：不愿作<br />今义：没有必要|不行->古义：不去做某事<br />今义：能力、本事欠缺；水平不高|不过->古义：不超过<br />今义：转折连词，|与->古义：结交<br />今义：和|丧->古义：损失<br />今义：死亡|个->古义：这样<br />今义：量词|中国->古义：中原地区<br />今义：中华人民共和国|为->古义：治理<br />今义：一般表示做（作为）|买舟->古义：雇船<br />今义：买船|事->古义：侍奉<br />今义：自然界和社会中的现象和活动|于是->古义：在这时<br />今义：因此|亡->古义：丧失,丢失.<br />今义：死亡|交通->古义：交错相通<br />今义：主要用于称各种运输和邮电事业|亲戚->古义：指父母兄弟，统指家里亲人<br />今义：旁系亲属|从来->古义：从哪里来<br />今义：从过去到现在|会->古义：适逢，正赶上<br />今义：会见|但->古义：只，只不过。只有，只要<br />今义：转折连词|何苦->古义：怕什么<br />今义：不值得做|兵->古义：兵器<br />今义：士兵|其实->古义：①它的果实。②那实际情况<br />今义：实际上（副词）|再->古义：第二次，两次<br />今义：又一次|几何->古义：多少<br />今义：数学中的一门学科|则->古义：那么，这样<br />今义：表示转折，就|初一->古义：刚刚开始<br />今义：农历每月的第一天|前进->古义：前，走上前去；走，奉献<br />今义：向前行进，思想进步|前途->古义：前面的路<br />今义：将来的光景|加->古义：虚夸，以少报多<br />今义：增加|劫->古义：胁迫<br />今义：以强力使对方欲去而不得|卑鄙->古义：地位低微，见识浅陋<br />今义：言行恶劣|即使->古义：即，就，让，叫<br />今义：表假设性让步连词|却->古义：退却<br />今义：表转折|厌->古义：满足<br />今义：表示嫌恶，憎恶|去->古义：离开<br />今义：到……去|可以->古义：可以凭借<br />今义：表示可能或能够（表示许可，赞同）|可怜->古义：可惜，可叹<br />今义：值得怜悯|可惜->古义：值得珍惜<br />今义：值得惋惜|向->古义：假使<br />今义：朝北开的窗户|咽->古义：咽下咽喉<br />今义：吞咽|固->古义：本来<br />今义：结实、牢固|地方->古义：①当地的事。②土地方圆。③大地的形状是方的<br />今义：①泛指空间的一部分。②民间。③地区|大风->古义：麻疯病<br />今义：大的风|奇巧->古义：特别手巧<br />今义：新奇而巧妙|如此->古义：像这样<br />今义：这样|妻子->古义：妻子和儿女<br />今义：专指男子的女性配偶|学者->古义：两个词，求学的人<br />今义：指在学术上有一定成就的人|完->古义：保全<br />今义：尽，无|居->古义：停留、过了<br />今义：居住、住所|左右->古义：侍卫人员<br />今义：①大致范围（方位词）。 ②控制（动词）|市->古义：买、卖、集市 <br />今义：城市|布衣->古义：平民<br />今义：棉布衣服|常->古义：经常<br />今义：平常，一般|床->古义：坐具<br />今义：卧具|开张->古义：扩大<br />今义：开业（多指商业部门）|弟兄->古义：有时单指兄<br />今义：①同辈之间。 ②旧时军队称士兵|感激->古义：感，感动；激，奋激<br />今义：深深的感谢|户->古义：窗户<br />今义：门|所以->古义：①缘故（名词）②表原因的虚词。③用来，靠它来<br />今义：表示因果关系的关联词|扶->古义：沿着，顺着<br />今义：扶持|扶老->古义：<br />今义：扶着老人|捐->古义：丢弃<br />今义：献出|故事->古义：先例、旧事<br />今义：真实的或虚构的有人物有情节的事情|文理->古义：文采和道理<br />今义：文章内容方面和词句方面的条理|无日->古义：不久<br />今义：不知还有多少时候，很久|无论->古义：不要说，更不必说<br />今义：连词，表无条件关系|明星->古义：明亮的星光<br />今义：指行业中做出成绩，出了名的人|春秋->古义：年龄，一年<br />今义：春季、秋季|智力->古义：智谋和力量<br />今义：理解事物的能力|有意->古义：①愿意。②有某种打算<br />今义：故意，居心|毒->古义：怨恨<br />今义：毒害，有毒的物质或事物|气候->古义：指天气（雨雪阴睛）的意思；<br />今义：指一个地区的气象概况|池->古义：护城河<br />今义：小水塘、池塘|汤->古义：热水<br />今义：菜或面做的稀状食物|涕->古义：眼泪<br />今义：鼻涕|烈士->古义：有雄心壮志的人<br />今义：为正义事业而献身的人|然后->古义：这样以后<br />今义：表示一件事情之后接着又发生另一件事情|然而->古义：两个词。“然”代指上文所说的情况，“而”表示转折，等于说“如此（这样），可是……”<br />今义：是一个表示转折的连词|特->古义：只不过<br />今义：特殊，超出一般|牺牲->古义：祭祀用的猪、牛、羊等<br />今义：为正义而献出生命|狱->古义：案件<br />今义：监犯人的地方（监狱）|率->古义：都，皆<br />今义：带领|用心->古义：思想意识的活动（中性）<br />今义：读书用功或对事肯动脑筋（褒义）|病->古义：困苦不堪<br />今义：疾病|痛恨->古义：痛心、遗憾<br />今义：无比憎恨|盖->古义：原因<br />今义：遮掩，压倒，超过|直走->古义：趋向<br />今义：行走|祖父->古义：祖辈和父辈<br />今义：父亲的父亲|稍稍->古义：渐渐地、慢慢地<br />今义：稍微|穷->古义：极，尽<br />今义：资财缺乏(古时用“贫”)|精英->古义：指金玉珠宝等物<br />今义：指优秀人才|经营->古义：指金玉珠宝等物<br />今义：指筹划管理或组织(企业、活动)|结束->古义：整装<br />今义：事情做完一个过程的完结|绝境->古义：与世隔绝的地方<br />今义：无出路的境地|美人->古义：歌伎、宫妃<br />今义：美貌女子|股->古义：大腿<br />今义：屁股|至于->古义：至：到；于：引出结果。以至于<br />今义：连词，表示到达某种程度|致意->古义：抒发心情。如：其存君兴国而欲反复之，一篇之中，三致意焉。 （《屈原列传》）<br />今义：表示问候|致词->古义：对……说话<br />今义：指在举行某种仪式时说勉励、感谢、祝贺、悼念等的话|苟->古义：如果<br />今义：姑且，暂且|若->古义：你<br />今义：像|落->古义：座，所；<br />今义：下降，衰败|虽然->古义：两个词，“虽”即“虽然”，“然”即“如此”“这样”<br />今义：一个词|行为->古义：行，品行；为，做<br />今义：举动|裙->古义：衣服<br />今义：裙子|规->古义：计划<br />今义：规则，成例|视->古义：对待<br />今义：看，视觉|走->古义：“跑”的意思<br />今义：行走|越->古义：及，到<br />今义：过了|速->古义：招致<br />今义：速度|道->古义：途径，原因<br />今义：道理，事理|鄙->古义：浅陋<br />今义：粗俗，低下|钩心斗角->古义：指宫室结构的参差错落，精巧工致<br />今义：比喻用尽心机，明争暗斗|陇断->古义：山岗高地<br />今义：把持和独占。[注：陇同垄]|隔离->古义：遮断，遮蔽<br />今义：不让聚在一起，避免接触|非常->古义：意外事故（名词）<br />今义：很、大（副词）|鞠躬->古义：①弯着身子。②恭敬地、谨慎地<br />今义：行礼|鲜美->古义：鲜艳美丽<br />今义：食物新鲜，味道好"
+
+function unique(array){
+    var n = [];//临时数组
+    for(var i = 0;i < array.length; i++){
+        if(n.indexOf(array[i]) == -1) n.push(array[i]);
+    }
+    return n;
+}
+
+var lsTongJia = unique(lsTongJia.split("|")).map(function(v){return v.split("->")})
+var lsXuCi =    unique(lsXuCi.split("|")).map(function(v){return v.split("->")})
+var lsShiCi =   unique(lsShiCi.split("|")).map(function(v){return v.split("->")})
+var lsGuJinYiYi =   unique(lsGuJinYiYi.split("|")).map(function(v){return v.split("->")})
+
+getSentence = function(txt, pos){
+    lsBiaoDian = ["　", "！","，","。","；","？","“","”"]
+    posL = Math.max.apply(null, [0].concat(lsBiaoDian.map(function(v){return txt.lastIndexOf(v, pos)}).filter(function(v){return v!=-1})))
+    posR = Math.min.apply(null, [txt.length].concat(lsBiaoDian.map(function(v){return txt.indexOf(v, pos)}).filter(function(v){return v!=-1})))
+    console.log(posL, posR)
+    return txt.substr(posL+1, posR - posL-1).replace(/ /g, "").replace(/\/[a-z]+/g, "")
+}
+getWord = function(txt, pos){
+    lsBiaoDian = ["　", "！","，","。","；","？","“","”"," "]
+    posL = Math.max.apply(null, [0].concat(lsBiaoDian.map(function(v){return txt.lastIndexOf(v, pos)}).filter(function(v){return v!=-1})))
+    posR = Math.min.apply(null, [txt.length].concat(lsBiaoDian.map(function(v){return txt.indexOf(v, pos)}).filter(function(v){return v!=-1})))
+    console.log(posL, posR)
+    return txt.substr(posL+1, posR - posL-1)
+}
+tbodyMatches = function(text, ls){
+    var lsHtml = []
+    ls.forEach(function(v){
+        var pos = text.indexOf(v[0], 0)
+        var lspos = []
+        while(pos != -1){
+            lspos[lspos.length] = pos
+            pos = text.indexOf(v[0], pos + 1)
+        }
+        // if(lspos.length){
+        //     lsHtml[lsHtml.length] = ""
+        //         +"<tr>"
+        //         +'<td rowspan="'+lspos.length+'">'+v[0]+"</td>"
+        //         +'<td rowspan="'+lspos.length+'">'+v[1]+"</td>"
+        //         +"<td>"+getSentence(text, lspos.shift())+"</td>"
+        //         +"</tr>"
+
+        //     lspos.forEach(function(v){
+        //         lsHtml[lsHtml.length] = ""
+        //             +"<tr>"
+        //                 +"<td>"+getSentence(text, v)+"</td>"
+        //             +"</tr>"
+        //     })
+        // }
+
+        lspos.forEach(function(pos){
+            lsHtml[lsHtml.length] = ""
+                +"<tr>"
+                    +'<td>'+v[0]+"</td>"
+                    +'<td>'+v[1]+"</td>"
+                    +"<td>"+getWord(text, pos)+"</td>"
+                    +"<td>"+getSentence(text, pos)+"</td>"
+                +"</tr>"
+        })
+    })
+    return lsHtml.join("")
+}
+analyze = function(obj){
+    document.getElementById("tongjiazi").innerHTML = tbodyMatches(obj.value, lsTongJia)
+    document.getElementById("xuci").innerHTML = tbodyMatches(obj.value, lsXuCi)
+    document.getElementById("shici").innerHTML = tbodyMatches(obj.value, lsShiCi)
+    document.getElementById("gujinyiyi").innerHTML = tbodyMatches(obj.value, lsGuJinYiYi)
+}
+</script>
+<style type="text/css">
+    #text{
+        width:100%;
+        height: 12em;
+        font-size: 10;
+    }
+    *{
+        font-family: "微软雅黑";
+    }
+    td:hover
+    {
+        transform: rotate(-5deg);
+        opacity: 1;
+        font-weight: 800;
+        color: blue;
+        background: #FFFFFF;
+        box-shadow: 0 0 1em #000;
+    }
+    td{
+        transition: color 1s, background 1s, box-shadow 1s, font-weight 1s, opacity 0.5s, transform 0.2s, width 2s;
+    }
+</style>
+
+<div id='waiDiv'>
+    // 通假字筛选器
+    // 虚词筛选器
+    // 实词筛选器
+    // 古今异义筛选器
+    <textarea id='text' onchange='analyze(this)'>
+六/m  国/n  破灭/v  ，/wp  非兵/b  不利/a  ，/wp  战不善/i  ，/wp  弊/n  在/p  赂秦/n  。/wp  赂/nh  秦而力亏/nh  ，/wp  破灭/v  之/u  道/n  也/u  。/wp  或/c  曰/v  ：/wp  六/m  国/n  互丧/v  ，/wp  率/v  赂/n  秦/nh  耶/u  ？/wp  曰/v  ：/wp  不赂者/n  以/p  赂者/n  丧/v  ，/wp  盖失/v  强援/v  ，/wp  不/d  能/v  独/d  完/v  。/wp  故/c  曰/v  ：/wp  弊/n  在/p  赂秦/n  也/u  。/wp
+
+秦以/nh  攻取/v  之外/nd  ，/wp  小/a  则/c  获邑/v  ，/wp  大/a  则/c  得/v  城/n  。/wp  较/d  秦/a  之/u  所得/n  ，/wp  与/p  战胜/v  而/c  得/v  者/r  ，/wp  其实/d  百倍/m  ；/wp  诸侯/n  之/u  所/u  亡/v  ，/wp  与/p  战败/n  而/c  亡者/n  ，/wp  其实/d  亦/d  百/m  倍/q  。/wp  则/c  秦/nt  之/r  所/u  大欲/n  ，/wp  诸侯/n  之/u  所/n  大/d  患/v  ，/wp  固/d  不/d  在/v  战/v  矣/u  。/wp  思厥/n  先祖父/n  ，/wp  暴霜露/n  ，/wp  斩/v  荆棘/n  ，/wp  以/c  有/v  尺寸/n  之/u  地/n  。/wp  子孙视之不甚惜/n  ，/wp  举/v  以/p  予/v  人/n  ，/wp  如/v  弃/v  草芥/n  。/wp  今日/nt  割/v  五/m  城/n  ，/wp  明日/nt  割/v  十/m  城/n  ，/wp  然后/c  得/v  一/m  夕/q  安寝/n  。/wp  起视/v  四境/n  ，/wp  而/c  秦兵/nh  又/d  至/v  矣/u  。/wp  然/c  则/c  诸侯之地/i  有限/a  ，/wp  暴秦之欲无厌/i  ，/wp  奉/v  之/r  弥/a  繁/a  ，/wp  侵/v  之/r  愈/d  急/a  。/wp  故/c  不/d  战/v  而/c  强弱/n  胜负/n  已/d  判/v  矣/u  。/wp  至于/p  颠覆/v  ，/wp  理固宜然/i  。/wp  古人/n  云/v  ：/wp  “/wp  以/p  地/u  事秦/i  ，/wp  犹/d  抱/v  薪/n  救火/v  ，/wp  薪/n  不尽/d  ，/wp  火/n  不/d  灭/v  。/wp  ”/wp  此言/r  得/v  之/r  。/wp
+
+齐/a  人/n  未/d  尝/v  赂/v  秦/nt  ，/wp  终继/d  五/m  国/n  迁灭/v  ，/wp  何/r  哉/u  ？/wp  与/p  嬴/n  而/c  不/d  助/v  五/m  国/n  也/u  。/wp  五/m  国/n  既/c  丧/v  ，/wp  齐/d  亦/d  不免/d  矣/u  。/wp  燕赵之君/nh  ，/wp  始/d  有/v  远略/n  ，/wp  能/v  守/v  其/r  土/n  ，/wp  义/n  不/d  赂/v  秦/nh  。/wp  是/v  故燕/n  虽/c  小国/n  而后亡/i  ，/wp  斯用兵/nh  之/u  效/n  也/u  。/wp  至丹/nh  以/p  荆卿/n  为计/v  ，/wp  始速祸/v  焉/u  。/wp  赵尝五/nh  战/v  于/p  秦/nt  ，/wp  二/m  败/v  而/c  三/m  胜/v  。/wp  后/nd  秦击/v  赵者/n  再/d  ，/wp  李牧连/nh  却/d  之/r  。/wp  洎牧/v  以/p  谗诛/n  ，/wp  邯郸/ns  为/v  郡/n  ，/wp  惜/v  其/r  用/p  武而不终/n  也/u  。/wp  且/c  燕赵处/nh  秦革灭/nh  殆尽/v  之际/nd  ，/wp  可谓/v  智力/n  孤危/a  ，/wp  战败/v  而/c  亡/v  ，/wp  诚不得已/i  。/wp  向/p  使/v  三/m  国/n  各/r  爱/v  其/r  地/n  ，/wp  齐人/n  勿附/v  于/p  秦/nt  ，/wp  刺客/n  不行/a  ，/wp  良将/n  犹/d  在/v  ，/wp  则/c  胜负/n  之/u  数/n  ，/wp  存亡/v  之/u  理/n  ，/wp  当/v  与/c  秦相较/n  ，/wp  或/c  未/d  易量/a  。/wp
+
+呜呼/e  ！/wp  以/p  赂秦/i  之/u  地/n  ，/wp  封/v  天下之谋臣/n  ，/wp  以/p  事/n  秦/nt  之/u  心/n  ，/wp  礼/n  天下/n  之/u  奇才/n  ，/wp  并/c  力/v  西/j  向/n  ，/wp  则/c  吾/r  恐/v  秦人/n  食/v  之/r  不得/v  下/nd  咽/v  也/u  。/wp  悲夫/a  ！/wp  有/v  如此/r  之/u  势/n  ，/wp  而/c  为/p  秦人/n  积威/n  之/u  所/u  劫/v  ，/wp  日削月割/i  ，/wp  以/c  趋于/v  亡/v  。/wp  为/p  国者/n  无/v  使/v  为/v  积威/n  之/u  所/u  劫/v  哉/u  ！/wp
+
+夫/j  六/m  国/n  与/c  秦/nt  皆/d  诸侯/n  ，/wp  其/r  势弱/v  于/p  秦/nt  ，/wp  而/c  犹/d  有/v  可以/v  不/d  赂/v  而/c  胜之/i  之/u  势/n  。/wp  苟/c  以/p  天下/n  之/u  大/a  ，/wp  而/c  从/p  六/m  国/n  破亡/v  之/u  故事/n  ，/wp  是/v  又/d  在/p  六/m  国/n  下/v  矣/u  。/wp
+    </textarea>
+    <span>
+        <h3>通假字筛选器</h3>
+        <table id='tongjiazi'>
+
+        </table>
+    </span>
+    <span>
+        <h3>虚词筛选器</h3>
+        <table id='xuci'>
+
+        </table>
+    </span>
+
+    <span>
+        <h3>实词筛选器</h3>
+        <table id='shici'>
+
+        </table>
+    </span>
+
+    <span>
+        <h3>古今异义筛选器</h3>
+        <table id='gujinyiyi'>
+
+        </table>
+    </span>
+</div>
+
+<h3 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>雪星表示对此工具保留最终解释权</h3>
+<h4 id="snowstarcyangmailcom"><a href="mailto:SnowstarCyan@gmail.com">SnowstarCyan@gmail.com</a></h4>
+</div></article></body></html>
